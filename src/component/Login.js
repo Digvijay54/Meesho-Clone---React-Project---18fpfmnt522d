@@ -16,15 +16,15 @@ function Login() {
   const justCheck =()=>{
      let dlt =JSON.parse(localStorage.getItem('users'))
     
-   dlt && dlt.map((item)=>{
+   dlt && dlt.map((item) => {
            if(item.email === logindetails.username && item.password ===logindetails.pwd){
            
             setLoginStatus(true)
            }
-           if(item.email !== logindetails.username || item.password !==logindetails.pwd || item.email !==null &&item.password !==null){
-           alert('invalid username or password')
+          //  if((item.email !== logindetails.username || item.password !==logindetails.pwd) || (item.email !==null && item.password !==null)){
+          //  alert('invalid username or password')
         
-           }
+          //  }
           
     })
   
